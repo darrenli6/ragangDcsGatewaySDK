@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ragany-dcs-gateway-sdk"
+dynamic = ["version"]
+description = "工业 DCS 网关 HTTP 采集 SDK（发酵工艺），基于 httpx + pydantic，支持同步/异步"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+dependencies = [
+    "httpx>=0.25,<1",
+    "pydantic>=2.5,<3",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+    "Topic :: System :: Hardware",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov>=4", "mypy>=1.8", "ruff>=0.4"]
+
+[tool.hatch.version]
+path = "ragany_dcs_gateway_sdk/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ragany_dcs_gateway_sdk"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+
+[tool.coverage.run]
+source = ["ragany_dcs_gateway_sdk"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = []
+
+[tool.ruff.format]
+exclude = ["*.md"]
