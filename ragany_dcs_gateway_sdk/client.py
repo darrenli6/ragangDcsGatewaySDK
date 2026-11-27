@@ -1,5 +1,7 @@
 """核心 HTTP 客户端：请求、重试、超时、鉴权、报文解析。
 
+版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+
 提供同步 :class:`DCSGatewayClient` 与异步 :class:`AsyncDCSGatewayClient`，
 两者共享 :class:`_ClientCore` 中的请求构造与响应解析逻辑，行为完全一致。
 """

@@ -1,5 +1,8 @@
 """离线测试工具：模拟 DCS 网关，无需现场设备即可开发与测试。
 
+版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+本项目为专有软件，未经书面授权不得复制、修改、反向工程、分发或商用。
+
 示例::
 
     from ragany_dcs_gateway_sdk import DCSGatewayClient

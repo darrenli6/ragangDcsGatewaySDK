@@ -8,7 +8,8 @@ dynamic = ["version"]
 description = "工业 DCS 网关 HTTP 采集 SDK（发酵工艺），基于 httpx + pydantic，支持同步/异步"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "Proprietary" }
+license = { file = "LICENSE" }
+license-files = ["LICENSE", "NOTICE.md"]
 dependencies = [
     "httpx>=0.25,<1",
     "pydantic>=2.5,<3",

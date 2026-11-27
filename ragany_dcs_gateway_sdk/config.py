@@ -1,4 +1,7 @@
-"""SDK 配置：网关地址、超时、重试、采集周期、鉴权 token。"""
+"""SDK 配置：网关地址、超时、重试、采集周期、鉴权 token。
+
+版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+"""
 
 from __future__ import annotations
 

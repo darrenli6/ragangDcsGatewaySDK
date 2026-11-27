@@ -1,4 +1,7 @@
-"""Pydantic 模型：网关点位结构、读值结果、发酵工艺点位与批次数据。"""
+"""Pydantic 模型：网关点位结构、读值结果、发酵工艺点位与批次数据。
+
+版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+"""
 
 from __future__ import annotations
 

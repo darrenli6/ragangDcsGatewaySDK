@@ -1,5 +1,12 @@
 # ragany_dcs_gateway_sdk
 
+> **专有软件 / 严格版权保留**
+>
+> 版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+> 未经权利人事先书面许可，禁止复制、修改、反向工程、反向编译、反向汇编、再许可、
+> 出售、出租、分发、公开传播、商用部署或向第三方提供本项目及其衍生物。
+> 详细条款见 [`LICENSE`](LICENSE) 与 [`NOTICE.md`](NOTICE.md)。
+
 工业 DCS 网关 HTTP 采集 SDK（发酵工艺场景）。基于 **httpx**（同步 + 异步、连接池、超时、重试）与 **Pydantic v2**（类型安全的点位模型）。
 
 协议原文见 [docs/gateway_api_spec.md](docs/gateway_api_spec.md)：`POST http://<网关>/soap/BrowseTag`、`POST http://<网关>/soap/ReadTag`。

@@ -1,5 +1,9 @@
 """ragany_dcs_gateway_sdk —— 工业 DCS 网关 HTTP 采集 SDK（发酵工艺）。
 
+版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+本项目为专有软件，未经书面授权不得复制、修改、反向工程、分发或商用。
+完整条款见项目根目录 LICENSE 与 NOTICE.md。
+
 快速开始::
 
     from ragany_dcs_gateway_sdk import DCSGatewayClient, PhPoint

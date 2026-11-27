@@ -1,5 +1,7 @@
 """SDK 异常体系。
 
+版权所有 © 2026 Ragany DCS Gateway SDK 权利人。保留一切权利。
+
 所有异常都继承自 :class:`DCSGatewayError`，调用方可以只捕获这一个基类，
 也可以按需精细处理::
 
