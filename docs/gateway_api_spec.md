@@ -10,7 +10,7 @@
 ├── __init__.py               # 对外暴露入口类
 ├── client.py                # 核心HttpClient（http请求、重试、超时、鉴权）
 ├── models.py                # Pydantic模型：PhPoint、TempPoint、BatchData（工艺点位）
-├── exceptions.py            # 自定义异常：网关离线、点位不存在、校验失败（自研！加分）
+├── exceptions.py            # 自定义异常：网关离线、点位不存在、校验失败 
 ├── config.py                # 配置：网关地址、采集周期、token
 ├── utils.py                 # 工具：时间格式化、点位映射、报文校验
 └── examples/
